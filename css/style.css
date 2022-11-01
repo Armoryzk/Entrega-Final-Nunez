@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: #dcdc;
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif; }
+  body header nav {
+    background: linear-gradient(to left, lightgreen, #1d1e22); }
+  body .main-productos .contenedor-carta {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+    body .main-productos .contenedor-carta .carta {
+      width: 280px;
+      margin: 20px;
+      border-radius: 6px;
+      overflow: hidden;
+      background-color: #1d1e22;
+      box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+      cursor: default;
+      transition: all 400ms ease; }
+      body .main-productos .contenedor-carta .carta .imagen {
+        position: relative;
+        width: 100%;
+        height: 280px;
+        overflow: hidden; }
+        body .main-productos .contenedor-carta .carta .imagen img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      body .main-productos .contenedor-carta .carta .contenido-carta {
+        padding: 1rem;
+        color: #e7d8d8; }
+        body .main-productos .contenedor-carta .carta .contenido-carta p {
+          text-align: end;
+          font-size: x-large;
+          margin-top: 1rem;
+          margin-bottom: -10px;
+          color: lightgreen; }
+      body .main-productos .contenedor-carta .carta .boton-carta {
+        background-color: #1d1e22;
+        padding: 1rem;
+        text-align: center;
+        transition: all 0.5s ease; }
+        body .main-productos .contenedor-carta .carta .boton-carta a {
+          padding: 5rem;
+          text-decoration: none;
+          text-transform: uppercase;
+          color: #e7d8d8;
+          font-size: large;
+          text-align: center;
+          letter-spacing: 1.5px;
+          font-weight: 900; }
+        body .main-productos .contenedor-carta .carta .boton-carta a:hover {
+          color: #1d1e22; }
+      body .main-productos .contenedor-carta .carta .boton-carta:hover {
+        background-color: lightgreen; }
+    body .main-productos .contenedor-carta .carta:hover {
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); }
+  body .main-contacto {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), #1d1e22), url(../img/bgrnd2.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    body .main-contacto .imagen-formulario img {
+      margin-bottom: -200px;
+      margin-top: -310px; }
+    body .main-contacto form {
+      width: 90%;
+      max-width: 600px; }
+      body .main-contacto form .contenedor-formulario {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        body .main-contacto form .contenedor-formulario .formulario-contenido {
+          flex-basis: 48%; }
+      body .main-contacto form .formulario-contenido {
+        margin-bottom: 30px;
+        position: relative; }
+        body .main-contacto form .formulario-contenido input, body .main-contacto form .formulario-contenido textarea {
+          width: 100%;
+          padding: 10px;
+          outline: 0;
+          border: 1px solid lightgreen;
+          border-radius: 5px;
+          color: lightgreen;
+          background: transparent;
+          font-size: 15px; }
+        body .main-contacto form .formulario-contenido label {
+          height: 100%;
+          position: absolute;
+          left: 0;
+          top: 0;
+          padding: 10px;
+          color: #ffffff;
+          transition: 0.2s; }
+        body .main-contacto form .formulario-contenido input:focus ~ label, body .main-contacto form .formulario-contenido input:valid ~ label, body .main-contacto form .formulario-contenido textarea:focus ~ label, body .main-contacto form .formulario-contenido textarea:valid ~ label {
+          top: -35px;
+          font-size: 14px; }
+      body .main-contacto form .formulario-boton {
+        padding: 10px 0;
+        color: #ffffff;
+        outline: none;
+        background: transparent;
+        border: 1px solid lightgreen;
+        border-radius: 5px;
+        width: 100%;
+        cursor: pointer; }
+  body footer {
+    background-color: #1d1e22;
+    padding: 70px 0; }
+    body footer .contenedor-footer {
+      max-width: 1200px;
+      margin: auto; }
+      body footer .contenedor-footer .row {
+        display: flex;
+        flex-wrap: wrap; }
+        body footer .contenedor-footer .row .columna-footer {
+          width: 33.3%;
+          padding: 0 15px; }
+          body footer .contenedor-footer .row .columna-footer h4 {
+            font-size: 18px;
+            color: #ffffff;
+            text-transform: capitalize;
+            margin-bottom: 35px;
+            margin-left: 30px;
+            font-weight: 500;
+            position: relative; }
+          body footer .contenedor-footer .row .columna-footer h4::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            background-color: lightgreen;
+            height: 2px;
+            box-sizing: border-box;
+            width: 50px; }
+          body footer .contenedor-footer .row .columna-footer ul {
+            list-style: none; }
+            body footer .contenedor-footer .row .columna-footer ul li:not(:last-child) {
+              margin-bottom: 10px; }
+            body footer .contenedor-footer .row .columna-footer ul li a {
+              font-size: 16px;
+              text-transform: capitalize;
+              color: #ffffff;
+              text-decoration: none;
+              font-weight: 300;
+              color: #bbbbbb;
+              display: block;
+              transition: all 0.3s ease; }
+            body footer .contenedor-footer .row .columna-footer ul li a:hover {
+              color: lightgreen;
+              padding-left: 8px; }
+          body footer .contenedor-footer .row .columna-footer .social-links a {
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            background-color: rgba(255, 255, 255, 0.2);
+            margin: 0 10px 10px 0;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            color: #ffffff;
+            transition: all 0.5s ease; }
+          body footer .contenedor-footer .row .columna-footer .social-links a:hover {
+            color: #1f2126;
+            background-color: lightgreen; }
+
+/*Media Queries*/
+@media (max-width: 767px) {
+  body footer .contenedor-footer .row .columna-footer {
+    width: 33%;
+    margin-bottom: 30px; } }
+
+@media (max-width: 574px) {
+  body footer .contenedor-footer .row .columna-footer {
+    width: 100%;
+    text-align: center; }
+    body footer .contenedor-footer .row .columna-footer h4::before {
+      left: auto; } }
